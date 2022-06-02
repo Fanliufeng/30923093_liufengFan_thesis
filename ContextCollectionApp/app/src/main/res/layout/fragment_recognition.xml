@@ -1,0 +1,355 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.RecognitionFragment">
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:orientation="horizontal"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:weightSum="4">
+            <LinearLayout
+                android:layout_width="90dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:weightSum="3">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/noise_icon"
+                    android:padding="5dp">
+                </ImageView>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:text="0 DB"
+                    android:textSize="13dp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:paddingTop="3dp"
+                    android:id="@+id/text_avg_sound">
+                </TextView>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:text="Sound level"
+                    android:textSize="10dp"
+                    android:gravity="center"
+                    >
+                </TextView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="90dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="30dp"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:weightSum="3">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/duration_icon"
+                    android:padding="5dp">
+                </ImageView>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:text="0 mins"
+                    android:textSize="13dp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:paddingTop="3dp"
+                    android:id="@+id/text_duration">
+                </TextView>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:text="Duration"
+                    android:textSize="10dp"
+                    android:gravity="center"
+                    >
+                </TextView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="90dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="30dp"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:weightSum="3">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:id="@+id/timeImage"
+                    android:padding="5dp">
+                </ImageView>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:text="Daytime"
+                    android:textSize="13dp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:paddingTop="3dp"
+                    android:id="@+id/text_time">
+                </TextView>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:text="Time"
+                    android:textSize="10dp"
+                    android:gravity="center"
+                    >
+                </TextView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="90dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="30dp"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:weightSum="3">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/screen_icon"
+                    android:padding="5dp">
+                </ImageView>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:text="None"
+                    android:textSize="13dp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:paddingTop="3dp"
+                    android:gravity="center"
+                    android:id="@+id/text_screen_status">
+                </TextView>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:text="Screen Status"
+                    android:textSize="10dp"
+                    android:gravity="center"
+                    >
+                </TextView>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:orientation="horizontal"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:weightSum="4">
+            <LinearLayout
+                android:layout_width="90dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:weightSum="3">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:id="@+id/location_image"
+
+                    android:padding="5dp">
+                </ImageView>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:text="None"
+                    android:textSize="13dp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:paddingTop="3dp"
+                    android:id="@+id/text_location">
+                </TextView>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:text="Location"
+                    android:textSize="10dp"
+                    android:gravity="center"
+                    >
+                </TextView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="90dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="30dp"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:weightSum="3">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/speed_icon"
+                    android:padding="5dp">
+                </ImageView>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:text="0 KM/H"
+                    android:textSize="13dp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:paddingTop="3dp"
+                    android:id="@+id/text_avg_speed">
+                </TextView>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:text="Speed"
+                    android:textSize="10dp"
+                    android:gravity="center"
+                    >
+                </TextView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="90dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="30dp"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:weightSum="3">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:id="@+id/BTStatusImage"
+                    android:padding="5dp">
+                </ImageView>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:text="None"
+                    android:textSize="13dp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:paddingTop="3dp"
+                    android:id="@+id/text_bt_status">
+                </TextView>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:text="BT Status"
+                    android:textSize="10dp"
+                    android:gravity="center"
+                    >
+                </TextView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="90dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="30dp"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:weightSum="3">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:id="@+id/activity_image"
+                    android:padding="5dp">
+                </ImageView>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:text="None"
+                    android:textSize="13dp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:paddingTop="3dp"
+                    android:gravity="center"
+                    android:id="@+id/text_activity_label">
+                </TextView>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:text="Activity"
+                    android:textSize="10dp"
+                    android:gravity="center"
+                    >
+                </TextView>
+            </LinearLayout>
+        </LinearLayout>
+
+
+      <ImageView
+          android:layout_width="250dp"
+          android:layout_height="250dp"
+          android:paddingTop="10dp"
+          android:layout_gravity="center"
+          android:id="@+id/dailyActivityImage">
+      </ImageView>
+
+        <TextView
+            android:id="@+id/textADL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp"
+            android:gravity="center_horizontal"
+            android:text="Not specify"
+            android:textColor="@color/black"
+            android:textColorHighlight="@color/black"
+            android:textStyle="bold"
+            android:paddingBottom="20dp"
+            android:textSize="28dp" />
+
+        <TextView
+            android:id="@+id/textADLDetail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="Not specify"
+            android:textStyle="bold"
+            android:paddingBottom="20dp"
+            android:textSize="20sp" />
+
+
+    </LinearLayout>
+
+</FrameLayout>

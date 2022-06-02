@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/nav_context_fragment">
+
+    <fragment
+        android:id="@+id/nav_context_fragment"
+        android:name="com.liufeng.contextcollectionapp.fragment.ContextInfoFragment"
+        android:label="ContextInfoFragment" />
+    <fragment
+        android:id="@+id/nav_user_setting"
+        android:name="com.liufeng.contextcollectionapp.fragment.UserSettingFragment"
+        android:label="User Setting Page"
+        tools:layout="@layout/fragment_user_setting" />
+    <fragment
+        android:id="@+id/nav_recognition"
+        android:name="com.liufeng.contextcollectionapp.fragment.RecognitionFragment"
+        android:label="CA-HAR"
+        tools:layout="@layout/fragment_recognition" />
+
+</navigation>

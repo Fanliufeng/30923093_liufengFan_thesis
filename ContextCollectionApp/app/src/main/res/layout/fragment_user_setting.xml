@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.UserSettingFragment">
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textSetting"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="Location Setting"
+            android:textSize="30sp" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:padding="1dp"
+                android:text="Latitude: "
+                android:textSize="20sp"/>
+            <TextView
+                android:id="@+id/textCurrentLat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:padding="1dp"
+                android:text="Longitude: "
+                android:textSize="20sp"/>
+            <TextView
+                android:id="@+id/textCurrentLon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:padding="1dp"
+                android:text="WiFi name: "
+                android:textSize="20sp"/>
+            <TextView
+                android:id="@+id/textCurrentWifiSSID"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:padding="1dp"
+                android:text="WiFi BSSID: "
+                android:textSize="20sp"/>
+            <TextView
+                android:id="@+id/textCurrentBSSID"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"/>
+        </LinearLayout>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/mGetCurrentLocation"
+            android:text="Get Current Location"
+            android:padding="20dp">
+
+        </Button>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/name_textField"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Edit Location Name"
+            android:paddingBottom="15dp"
+            android:paddingTop="15dp">
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"        />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/mSetCurrentLocation"
+            android:padding="20dp"
+            android:text="Set Current location">
+
+        </Button>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/mUpdateCurrentLocation"
+            android:padding="20dp"
+            android:text="Update Current location">
+
+        </Button>
+
+        <TextView
+            android:id="@+id/textView_read"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="None"
+            android:background="@color/white"
+            />
+
+        <TextView
+            android:id="@+id/textView_userStatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="None"
+            android:background="@color/white"
+            />
+
+
+    </LinearLayout>
+
+
+</FrameLayout>
